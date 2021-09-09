@@ -1,0 +1,44 @@
+.movie{
+    background-color: rgb(200, 200, 248);
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(188, 238, 200, 0.973);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 300px;
+}
+
+.movie img{
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.movie__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.movie__overview{
+    background-color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+    color: #22254b;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    max-height: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .movie__overview{
+    transform: translateX(0%);
+}
+
