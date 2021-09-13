@@ -41,7 +41,7 @@ const Display = () => {
             <input 
               className={styles.search} 
               type="search" 
-              placeholder="Search..."
+              placeholder="Search a movie here..."
               value={searchTerm}
               onChange={handleOnChange}
             />

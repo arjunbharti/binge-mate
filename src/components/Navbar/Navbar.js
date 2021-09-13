@@ -8,11 +8,11 @@ const Navbar = () => {
           <div className={styles.name}>
             <Link style={{fontSize: "20px"}} to="/">Welcome to BingeMate <span>📺</span>🍿</Link>
           </div>
-          <div className={styles.sections}>
+          {/* <div className={styles.sections}>
               <Link to="/login">Log In</Link>
               <Link to="/signup">Sign Up</Link>
               <Link to="/about">About</Link>
-          </div>
+          </div> */}
         </div>
     )
 }
