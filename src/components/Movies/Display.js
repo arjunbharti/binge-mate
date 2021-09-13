@@ -36,6 +36,16 @@ const Display = () => {
     }
     
     return (
+      <>
+        <form onSubmit={handleOnSubmit}>
+            <input 
+              className={styles.search} 
+              type="search" 
+              placeholder="Search..."
+              value={searchTerm}
+              onChange={handleOnChange}
+            />
+        </form>
         <div className={styles.container}>
           {movies.length > 0 && 
             movies.map((movie) => 
@@ -43,6 +53,7 @@ const Display = () => {
             )
           }
         </div>
+      </>
     )
 }
 
