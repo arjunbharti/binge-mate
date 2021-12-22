@@ -3,7 +3,7 @@ import { useState } from 'react/cjs/react.development';
 import Movie from './Movie';
 import styles from './Display.module.css'
 
-const MOVIE_API="https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=17c2b56f1cc05ee20c1361334d63545d";
+const MOVIE_API="https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=";
 const SEARCH_API=process.env.REACT_APP_SEARCH_API;
 
 
